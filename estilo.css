@@ -229,3 +229,33 @@ h1 {
     color: #ffffff; 
     margin: 5px 0;
 }
+ @media screen and (max-width: 768px) {
+    
+  .marco-exterior {
+     width: 100% !important;
+     min-height: auto !important;
+     padding: 20px 15px !important;
+     flex-direction: column !important; 
+     gap: 20px !important;
+     box-sizing: border-box;
+  }
+
+ .columna-izquierda, 
+ .columna-derecha {
+    width: 100% !important;
+  }
+
+ h1 {
+     font-size: 1.5rem !important;
+     letter-spacing: 1px !important;
+    }
+
+.texto-superior {
+    font-size: 1.5rem !important;
+   }
+    
+  body {
+      padding: 10px;
+     align-items: stretch;
+  }
+}
