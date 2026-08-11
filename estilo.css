@@ -231,6 +231,14 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+
+  .btn-inicio-neto {
+    font-size: 0.95rem !important;    
+     padding: 10px 20px !important;    
+     max-width: 90% !important;       
+     margin: 0 auto !important;   
+     box-sizing: border-box;
+ }
     
   .marco-exterior {
      width: 100% !important;
