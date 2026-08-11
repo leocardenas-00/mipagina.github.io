@@ -131,10 +131,4 @@
         flex-direction: column !important;
         gap: 10px !important;
     }
-
-    .btn-volver, .btn-navegacion {
-        width: 100% !important;
-        box-sizing: border-box;
-        text-align: center;
-    }
 }
