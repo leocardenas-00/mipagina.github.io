@@ -111,3 +111,32 @@ audio {
     border-color: #bfaea2;
     color: #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+    
+    body .contenedor-canciones,
+    body .seccion-canciones {
+        width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    body .caja-cancion, 
+    body .tarjeta-texto,
+    body .item-cancion {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 10px 0 !important;
+        padding: 15px !important;
+        box-sizing: border-box;
+    }
+
+    body .caja-cancion p, 
+    body .tarjeta-texto p {
+        font-size: 0.95rem !important;
+        line-height: 1.4 !important;
+    }
+}
