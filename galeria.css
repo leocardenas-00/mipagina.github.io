@@ -100,3 +100,15 @@
     border-color: #bfaea2;
     color: #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+ 
+    body .galeria-contenedor,
+    body .imagen-galeria {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        padding: 10px !important;
+        box-sizing: border-box;
+    }
+}
