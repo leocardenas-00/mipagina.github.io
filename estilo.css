@@ -259,9 +259,9 @@ h1 {
     box-sizing: border-box;
    }
     
- .flecha, 
- .boton-flecha, 
- .enlace-flecha { 
+ .flecha-icono, 
+ .btn-flecha, 
+ .btn-flecha { 
     font-size: 1.8rem !important;
     transform: scale(1.2) !important; 
     display: inline-block;
