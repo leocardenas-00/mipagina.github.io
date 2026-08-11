@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>De mi, para ti</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="marco-exterior">
+     <div class="columna-izquierda">
+            <p class="texto-superior">Esto es algo cursi en lo personal pero, es un detalle para ti</p>
+            <button class="btn-flecha" onclick="tp()">
+            <span class="flecha-icono">&#8595;</span>
+            </button>
+            
+         <div id="pergamino">
+        <div class="fotos">
+        <div class="foto">
+         <img src="foto1.jpeg" alt="1"> 
+         </div>
+         <div class="foto">
+         <img src="foto2.jpg" alt="2">
+         </div>
+         </div>
+                
+         <hr style="border: 0; border-top: 1px solid #d4c4a8; margin: 15px 0;">
+
+         <p class="texto">
+        <strong>05 de Noviembre</strong>  <br> <br>
+        Este fue nuestra primera salida aquella vez y cabe decir que estaba nervioso por aquel día. Sin embargo, pese a que fue la primera vez, debo resaltar que me gusto pasar la noche contigo, poder hablar y escucharte, en palabras simples fue cautivador, aprecio mucho esa fecha. Y aunque nuestros ideales son sumamente opuestos y debido a ese se podría considerar una incompatibilidad entre los dos, aún así, me terminaste gustando y te volviste alguien significativa para mí. 
+         <br>
+         </p>
+                
+        <button class="btn-sig" onclick="window.location.href='siguiente.html'">Continuar &rarr;</button>
+        </div>
+        </div>
+
+        <div class="columna-derecha">
+         <div class="titulo-derecha">Tiempo conociendonos
+         </div>
+            
+         <div class="dato-tiempo">
+         <span class="label-tiempo"> Nos conocimos el:</span>
+        <span style="font-size: 1.1rem; color: #fffefd;; font-style: italic;">31 de Octubre, 2025</span>
+        </div>
+
+        <div class="dato-tiempo">
+         <span class="label-tiempo">Días compartidos:</span>
+         <div class="dias-destacado" id="contador">...</div>
+        </div>
+
+         <script>
+         function calcularDias() {
+            var fechaInicio = new Date(2025, 9, 31); 
+            var fechaActual = new Date();
+            var diferenciaTiempo = fechaActual - fechaInicio;
+            var diasTotales = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24));
+            document.getElementById('contador').innerText = diasTotales;
+        }
+
+        calcularDias();
+
+        function tp() {
+            var p = document.getElementById('pergamino');
+            p.classList.toggle('abierto');
+        }
+          function abrirPergaminoYSaltar() {
+          document.getElementById('pergamino').classList.add('abierto');
+         window.location.href = 'siguiente.html';
+          }
+    </script>
+
+</body>
+</html>

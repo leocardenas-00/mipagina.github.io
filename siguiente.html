@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalle</title>
+<link rel="stylesheet" href="siguiente.css">
+</head>
+<body>
+
+    <div class="marco-exterior">
+        <h1>Te comparto canciones que me suenan a ti</h1>
+        
+        <div class="cancion-box" onclick="toggleAudio(this)">
+            <strong>Para ti:</strong> 
+            Suena cursi pero esta cancion esta presente y dedicada para quienes no temen en demostrar lo que sienten y pues como actualmente ya no me veo limitado por eso, te la dedico. 
+
+            <div class="reproductor-oculto" onclick="event.stopPropagation()">
+                <audio controls>
+                    <source src="cancion1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <div class="cancion-box" onclick="toggleAudio(this)">
+            <strong>Para ti:</strong>  
+            Esta cancion es mas suave y me parece perfecta porque entre los dos el intranquilo casi siempre termino siendo yo y creo que describe en parte la situacion que solemos pasar.
+
+            <div class="reproductor-oculto" onclick="event.stopPropagation()">
+                <audio controls>
+                    <source src="cancion2.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <div class="cancion-box" onclick="toggleAudio(this)">
+            <strong>Para ti:</strong> 
+            En esta cancion te la dedico con el fin en que te animes a decirme cuales son tus flores favoritas para poder comprartelas y compartir un momento de esos contigo. 
+
+            <div class="reproductor-oculto" onclick="event.stopPropagation()">
+                <audio controls>
+                    <source src="cancion3.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <div class="contenedor-botones">
+            <button class="btn-volver" onclick="window.location.href='principal.html'">&larr; Volver</button>
+            <button class="btn-navegacion" onclick="window.location.href='galeria.html'">Siguiente &rarr;</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleAudio(elemento) {
+            var reproductor = elemento.querySelector('.reproductor-oculto');
+            if (reproductor.style.display === 'block') {
+                reproductor.style.display = 'none';
+            } else {
+                reproductor.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>

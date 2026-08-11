@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para ti</title>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="final.css">
+
+</head>
+<body>
+
+    <div class="contenedor-galeria">
+        
+        <div class="pantalla-imagen">
+        <img src="1.jpg" alt="" class="mostrar">
+        </div>
+
+        <div class="caja-texto" id="texto-maquina"></div>
+
+        <div class="contenedor-botones">
+            <button class="btn-navegacion" onclick="window.location.href='siguiente.html'">&larr; Volver</button>
+            <button class="btn-navegacion" onclick="window.location.href='principal.html'">Inicio</button>
+        </div>
+    </div>
+
+    <script>
+        
+        var mensaje = "Las palabras no son mucho mi tipo Dayanna, es dificultoso expresarme sin sentir que me estoy humillando pero a pesar de eso quiero intentarlo porque quiero ser sincero contigo. Yo, siempre que te miro Dayanna, realmente eres lo único relevante para mí y al estar contigo siento que congeniamos pese a nuestros ideales opuestos y las ciertas platicas que tenemos. Y créeme yo aprecio al pasar contigo y me encantan muchas cosas de ti, una de esas cosas es que no eres ignorante y suena curioso lo sé pero para mí es la que más peso tiene y puede ser raro porque ¿Cómo se define eso? Pues eres alguien capaz de sostener lo que explicas, eres elocuente con una capacidad impresionante, y eso es realmente atractivo, yo admiro esas cualidades y sobre todo por esa en especifico. Y discúlpame si soy intenso con ese aspecto pero es sumamente difícil encontrar a una persona con esa característica, solo quiero que sepas que me encanta que seas alguien inteligente, y no pretendo obligarte ni quiero incomodarte, solo que sepas que me haces sentir feliz y nervioso, haces latir mi corazón cuando quedamos para salir y pese a eso irte a ver es una de las cosas que mas espero ";
+        var velocidad = 50; 
+        var i = 0;
+
+        function escribirTexto() {
+            if (i < mensaje.length) {
+                document.getElementById("texto-maquina").innerHTML += mensaje.charAt(i);
+                i++;
+                setTimeout(escribirTexto, velocidad);
+            }
+        }
+
+        
+        window.onload = escribirTexto;
+    </script>
+
+</body>
+</html>

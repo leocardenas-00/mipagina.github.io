@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorpresa</title>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="galeria.css">
+
+</head>
+<body>
+
+    <div class="contenedor-galeria">
+        <h1>imagenes al azar (4)</h1>
+        
+        <div class="area-azar">
+            <button class="btn-azar" onclick="mostrarAleatoria()"> Pulsa y verás </button>
+        </div>
+
+        <div class="pantalla-imagen" id="visor">
+            <img id="img1" src="pin1.jpg" alt="1">
+            <img id="img2" src="pin2.jpg" alt="2">
+            <img id="img3" src="pin3.jpg" alt="3">
+            <img id="img4" src="pin4.jpg" alt="4">
+        </div>
+
+        <div class="contenedor-botones">
+            <button class="btn-navegacion" onclick="window.location.href='siguiente.html'">&larr; Volver</button>
+            <button class="btn-navegacion" onclick="window.location.href='final.html'">Siguiente &rarr;</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarAleatoria() {
+            const imagenes = document.querySelectorAll('.pantalla-imagen img');
+            imagenes.forEach(img => img.classList.remove('activa')); 
+            const aleatorio = Math.floor(Math.random() * imagenes.length);
+            imagenes[aleatorio].classList.add('activa');
+        }
+    </script>
+
+</body>
+</html>
