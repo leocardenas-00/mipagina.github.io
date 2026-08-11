@@ -251,7 +251,7 @@ h1 {
      letter-spacing: 1px !important;
  }
     
-.texto-superior {
+ .texto-superior {
     font-size: 0.95rem !important;
     max-width: 90% !important;
     margin: 0 auto !important;
@@ -259,6 +259,15 @@ h1 {
     box-sizing: border-box;
    }
     
+ .flecha, 
+ .boton-flecha, 
+ .enlace-flecha { 
+    font-size: 1.8rem !important;
+    transform: scale(1.2) !important; 
+    display: inline-block;
+    margin: 10px auto;
+  }
+  
   body {
       padding: 10px;
       align-items: stretch;
