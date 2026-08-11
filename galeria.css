@@ -118,11 +118,11 @@
     }
 
     .pantalla-imagen {
-        width: 90vw !important;
-        max-width: 320px !important;
-        height: 90vw !important;
-        max-height: 320px !important;
-        margin: 0 auto 25px auto !important;
+        width: 80vw !important;
+        max-width: 260px !important;
+        height: 80vw !important;
+        max-height: 260px !important;
+        margin: 0 auto 20px auto !important;
     }
 
     .contenedor-botones {
