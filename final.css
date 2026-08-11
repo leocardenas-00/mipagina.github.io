@@ -128,7 +128,20 @@
     }
 
     .contenedor-botones {
-        flex-direction: column !important;
+        flex-direction: row !important;     
+        justify-content: space-between !important; 
+        align-items: center !important;
         gap: 10px !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .btn-volver, 
+    .btn-navegacion {
+        width: auto !important;          
+        font-size: 0.8rem !important;      
+        padding: 8px 12px !important;      
+        box-sizing: border-box !important;
+        text-align: center !important;
     }
 }
