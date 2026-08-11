@@ -230,7 +230,7 @@ h1 {
     margin: 5px 0;
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
     
   .marco-exterior {
      width: 100% !important;
@@ -240,19 +240,23 @@ h1 {
      gap: 20px !important;
      box-sizing: border-box;
   }
-    
+
  .columna-izquierda, 
  .columna-derecha {
     width: 100% !important;
   }
-    
+
  h1 {
-     font-size: 1.5rem !important;
+     font-size: 1.3rem !important;
      letter-spacing: 1px !important;
  }
-
+    
 .texto-superior {
-    font-size: 1.5rem !important;
+    font-size: 0.95rem !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+    padding: 12px 15px !important;
+    box-sizing: border-box;
    }
     
   body {
