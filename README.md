@@ -6,7 +6,7 @@
 - Reproducción de canciones
 - Función de imágenes aleatorias
 - Función de escribir texto a velocidad controlada
-- 
+  
 Esas son las características que tiene la página web, no es un proyecto como tal, pero, pretendo que sea el comienzo de uno. 
 
 
