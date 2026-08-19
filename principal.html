@@ -51,25 +51,19 @@
          <div class="dias-destacado" id="contador">...</div>
         </div>
 
-         <script>
-         function calcularDias() {
-            var fechaInicio = new Date(2025, 9, 31); 
-            var fechaActual = new Date();
-            var diferenciaTiempo = fechaActual - fechaInicio;
-            var diasTotales = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24));
-            document.getElementById('contador').innerText = diasTotales;
-        }
+        <script>
+      document.getElementById('contador').innerText = "292";
+      <h1 style="font-style: italic; font-size: 14px; text-align: center;">Este contador se detuvo desde este día</h1>
 
-        calcularDias();
-
-        function tp() {
-            var p = document.getElementById('pergamino');
-            p.classList.toggle('abierto');
-        }
-          function abrirPergaminoYSaltar() {
-          document.getElementById('pergamino').classList.add('abierto');
-         window.location.href = 'siguiente.html';
-          }
+    function tp() {
+        var p = document.getElementById('pergamino');
+        p.classList.toggle('abierto');
+    }
+    
+    function abrirPergaminoYSaltar() {
+        document.getElementById('pergamino').classList.add('abierto');
+        window.location.href = 'siguiente.html';
+    }
     </script>
 
 </body>
