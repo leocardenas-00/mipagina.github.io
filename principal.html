@@ -46,25 +46,26 @@
         <span style="font-size: 1.1rem; color: #fffefd;; font-style: italic;">31 de Octubre, 2025</span>
         </div>
 
-        <div class="dato-tiempo">
-         <span class="label-tiempo">Días compartidos:</span>
-         <div class="dias-destacado" id="contador">...</div>
-        </div>
-
-        <script>
-      document.getElementById('contador').innerText = "292";
-     <div style="font-style: italic; font-size: 13px; text-align: center; margin-top: 15px; color: white;">Este contador se detuvo desde este día</div>
-
-    function tp() {
-        var p = document.getElementById('pergamino');
-        p.classList.toggle('abierto');
-    }
+      <div class="dato-tiempo">
+ 	   <span class="label-tiempo">Días compartidos:</span>
+ 	   <div class="dias-destacado" id="contador">...</div>
     
-    function abrirPergaminoYSaltar() {
-        document.getElementById('pergamino').classList.add('abierto');
-        window.location.href = 'siguiente.html';
-    }
-    </script>
+      <div style="font-style: italic; font-size: 13px; text-align: center; margin-top: 15px; color: white;">Este contador se detuvo desde este día</div>
+ 	</div>
+         
+ 	<script>
+ 	    document.getElementById('contador').innerText = "292";
+
+ 	    function tp() {
+ 	        var p = document.getElementById('pergamino');
+ 	        p.classList.toggle('abierto');
+ 	    }
+ 	    
+ 	    function abrirPergaminoYSaltar() {
+ 	        document.getElementById('pergamino').classList.add('abierto');
+ 	        window.location.href = 'siguiente.html';
+ 	    }
+ 	</script>
 
 </body>
 </html>
